@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --Raleway:'Raleway', sans-serif;
+    --Open-Sans:'Open Sans', sans-serif;
+    --Cardo:'Cardo', serif;
+    --white:#ffffff;
+    --red:#e74545;
+    --black-hading:#2d3033;
+    --black-para:#6c7279;
+    --bg-color1:#533549;
+    --contact-bg:#393d63;
+    --footer-bg:#313353;
+    --footer-text:#808080;
+}
+body{
+    overflow-x: hidden;
+}
+
+.hero{
+    background: url(/img/bg-img.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.hero .nav-link{
+    color:var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--Raleway);
+}
+.hero-content h1{
+    font-size: 65px;
+    font-family: var(--Open-Sans);
+    font-weight: 700;
+    color: var(--white);
+    /* padding-top: 100px; */
+}
+.hero-content p{
+    font-size: 22px;
+    font-family: var(--Raleway);
+    color: var(--white);
+    /* padding: 10px 90px; */
+}
+.hero-content button{
+    background:var(--red);
+    padding: 10px 30px;
+    border-radius: 0;
+    border:none
+}
+
+.features{
+    padding: 80px  0;
+}
+.features-content h2{
+    font-family: var(--Raleway);
+    font-weight: bold;
+    font-size: 14px;
+    color:var(--black-hading);
+    padding: 30px 0 20px 0;
+    margin: 0;
+}
+.features-content p{
+    font-family: var(--Raleway);
+    font-size: 14px;
+    color: var(--black-para);
+    padding: 0 30px 0 30px ;
+}
+.work{}
+.work-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+.image {
+    display: block;
+    width: 100%;
+}
+.work-item .image{
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(231, 69, 69,0.6);
+  }
+.work-item:hover .overlay {
+    opacity: 1;
+}
+.overlay .text {
+    font-size:20 px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-40%, -40%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+.team{
+    padding:70px 0;
+}
+.team-img img{
+    width: 100%;
+}
+.team-content h3{
+    font-family: var(--Raleway);
+    font-size: 22px;
+    color: var(--black-hading);
+    padding-top: 20px;
+}
+.team-content h5{
+    font-family: var(--Raleway);
+    font-size: 13px;
+    color: var(--red);
+}
+.team-content p{
+    font-family: var(--Raleway);
+    font-size: 14px;
+    color: var(--black-para);
+}
+.team-icons{
+
+}
+.team-icons i{
+    color: var(--black-para);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid var(--black-para);
+}
+
+.client{
+    width: 100%;
+}
+.client-img{
+    padding: 0 !important;
+    
+}
+.client-img img{
+    width: 100%;
+    height: 100%;
+}
+.client-content{
+    padding: 0 !important;
+    background: var(--bg-color1);
+}
+.client-content h3{
+    font-family: var(--Cardo);
+    font-style: italic;
+    font-size: 32px;
+    color: var(--white);
+    /* padding: 40px 0 10px 40px; */
+}
+.client-content p{
+    font-family: var(--Raleway);
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--white);
+    margin: 0;
+    /* padding-left: 50px; */
+}
+
+.download{
+    padding: 50px 0;
+}
+.download-content h3{
+    font-family: var(--Raleway);
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--black-hading);
+}
+.download-content hp{
+    font-family: var(--Raleway);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--black-hading);
+}
+.download-content button{
+    background: var(--red);
+    border: none;
+    padding: 10px 30px;
+    color: var(--white);
+}
+
+.footer{
+    background: var(--contact-bg);
+    padding: 40px 0;
+}
+.footer-content h4{
+    font-family: var(--Raleway);
+    font-weight: 700;
+    font-size: 14px;
+
+}
+.footer-content p{
+    font-family: var(--Raleway);
+    font-size: 14px;
+}
+.footer-icon i{
+    color:var(--white);
+    border:1px solid var(var(--white));
+}
+
+.footer-bottom{
+    background: var(--footer-bg);
+    padding: 20px 0;
+}
+.footer-bottom-content p{
+   margin: 0;
+   font-family: var(--Raleway);
+   font-size: 14px;
+   color: var(--footer-text);
+}
+.footer-bottom-content span{
+    color: var(--red);
+}
+.footer-bottom-content .design-by{
+    color: var(--white);
+}

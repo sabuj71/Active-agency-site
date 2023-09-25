@@ -1,0 +1,7 @@
+@media (min-width: 300px) and (max-width: 575) {
+    /* hero section */
+    .hero-content h1{
+        font-size: 20px;
+        text-align: start;
+    }
+}
